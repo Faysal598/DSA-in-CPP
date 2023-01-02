@@ -13,7 +13,7 @@ int main()
             // cout << char('A' + row - 1) << " "; // e.g., 1
             /*cout << char('A' + count) << " "; // e.g. 2
             count++;*/
-            cout << char('A' + row + col - 2) << " "; // e,g., 3
+            cout << char('A' + row + col - 2) << " "; // e.g., 3
 
             col++;
         }
