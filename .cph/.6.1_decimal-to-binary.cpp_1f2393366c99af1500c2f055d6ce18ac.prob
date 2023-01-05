@@ -1,1 +1,1 @@
-{"name":"Local: 6","url":"f:\\DSA-in-CPP\\6.1_decimal-to-binary.cpp","tests":[{"id":1672895322095,"input":"15","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\DSA-in-CPP\\6.1_decimal-to-binary.cpp","group":"local","local":true}
+{"name":"Local: 6","url":"f:\\DSA-in-CPP\\6.1_decimal-to-binary.cpp","tests":[{"id":1672895322095,"input":"5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\DSA-in-CPP\\6.1_decimal-to-binary.cpp","group":"local","local":true}
