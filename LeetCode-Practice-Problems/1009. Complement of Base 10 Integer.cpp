@@ -2,52 +2,23 @@
 #include <math.h>
 using namespace std;
 
-int bitwiseComplement(int n)
-{
-    if (n == 0)
-        return 1; 
-
-    int ans = 0, i = 0;
-    while (n != 0)
-    {
-        int bit = n & 1;
-        if (bit == 1)
-        {
-            bit = 0;
-        }
-        else if (bit == 0)
-        {
-            bit = 1;
-        }
-
-        ans = (bit * powl(10, i)) + ans;
-
-        n = n >> 1;
-        i++;
-    }
-
-    int sum = 0, j = 0;
-    while (ans != 0)
-    {
-        int digit = ans % 10;
-        if (digit == 1)
-        {
-            sum = sum + pow(2, j);
-        }
-
-        ans = ans / 10;
-        j++;
-    }
-
-    return sum;
-}
-
 int main()
 {
-    int n, result;
+    int n;
     cin >> n;
+    int m = n, mask = 0, ans;
 
-    cout << bitwiseComplement(n) << endl;
+    if (n == 0)
+        return 1;
+        
+    while (m != 0)
+    {
+        mask = (mask << 1) | 1;
+        m = m >> 1;
+    }
+    ans = (~n) & mask;
+
+    cout << ans << endl;
 
     return 0;
 }
